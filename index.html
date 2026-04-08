@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniHub | Soluciones Tecnológicas y Mantenimiento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts para una tipografía moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos FontAwesome para los servicios -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navegación -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/omniHub_logo.png" alt="Logo de OmniHub">
+                <span>OmniHub</span>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Inicio (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Tu Hub Integral en Soluciones de Seguridad y Tecnología</h1>
+                <p>Especialistas en CCTV, Electricidad, Domótica y Mantenimiento de Equipo Médico. Innovación y confianza para tu hogar y negocio.</p>
+                <a href="#servicios" class="btn">Nuestros Servicios</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/omniHub_logo.png" alt="OmniHub Logo Principal">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Acerca de Nosotros -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <h2 class="section-title">Acerca de Nosotros</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>En <strong>OmniHub</strong>, nos dedicamos a integrar la mejor tecnología en cada uno de tus espacios. Nacimos con la visión de centralizar soluciones esenciales de seguridad, energía y automatización bajo un mismo estándar de excelencia.</p>
+                    <p>Contamos con un equipo altamente capacitado para brindar un servicio técnico especializado y personalizado, adaptándonos a las necesidades de cada cliente, desde el hogar hasta el sector médico.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Compromiso con la Calidad</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Innovación Continua</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Atención Especializada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                
+                <!-- CCTV -->
+                <div class="service-card card-cctv">
+                    <div class="icon-box"><i class="fas fa-video"></i></div>
+                    <h3>Instalación de CCTV</h3>
+                    <p>Seguridad y vigilancia de última generación para proteger lo que más importa. Sistemas IP y monitoreo remoto.</p>
+                </div>
+
+                <!-- Electricidad -->
+                <div class="service-card card-electricity">
+                    <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                    <h3>Instalaciones Eléctricas</h3>
+                    <p>Proyectos eléctricos residenciales e industriales, mantenimiento preventivo y correctivo con altos estándares de seguridad.</p>
+                </div>
+
+                <!-- Domótica -->
+                <div class="service-card card-domotics">
+                    <div class="icon-box"><i class="fas fa-home"></i></div>
+                    <h3>Domótica</h3>
+                    <p>Automatización inteligente para tu hogar. Control de luces, accesos y clima desde la palma de tu mano.</p>
+                </div>
+
+                <!-- Equipo Médico -->
+                <div class="service-card card-medical">
+                    <div class="icon-box"><i class="fas fa-hospital"></i></div>
+                    <h3>Mantenimiento Médico</h3>
+                    <p>Servicio técnico especializado para equipo médico. Garantizamos la operatividad y precisión de tus dispositivos.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Ponte en contacto</h3>
+                    <p>¿Tienes un proyecto en mente o necesitas mantenimiento? Escríbenos y nuestro equipo te atenderá a la brevedad.</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contacto@omnihub.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+52 000 000 0000</span>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="servicio" name="servicio" required>
+                            <option value="" disabled selected>Servicio de interés</option>
+                            <option value="cctv">CCTV</option>
+                            <option value="electricidad">Electricidad</option>
+                            <option value="domotica">Domótica</option>
+                            <option value="equipo-medico">Equipo Médico</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" name="mensaje" placeholder="Tu Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/omniHub_logo.png" alt="OmniHub Footer Logo">
+                    <span>OmniHub</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OmniHub. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
