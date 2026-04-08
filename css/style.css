@@ -313,19 +313,12 @@ nav ul li a:hover {
 
 .contact-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr; /* Una sola columna por defecto (Móvil) */
+    gap: 15px;
 }
 
-.form-group.full-width {
-    grid-column: span 2;
-}
-
-/* For simplicity in the first version, let's make all full width or specific ones */
-.contact-form .form-group:nth-child(4),
-.contact-form .form-group:nth-child(5),
-.contact-form button {
-    grid-column: span 2;
+.contact-form .form-group {
+    grid-column: span 1;
 }
 
 .contact-form input, 
@@ -344,6 +337,20 @@ nav ul li a:hover {
 .contact-form select:focus, 
 .contact-form textarea:focus {
     border-color: var(--primary-color);
+}
+
+/* Ajustes para pantallas más grandes (Tablets en adelante) */
+@media (min-width: 600px) {
+    .contact-form {
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+        gap: 20px;
+    }
+
+    /* Mensaje y Botón siempre ocupan todo el ancho */
+    .contact-form .form-group:nth-child(5),
+    .contact-form button {
+        grid-column: span 2;
+    }
 }
 
 /* Footer */
