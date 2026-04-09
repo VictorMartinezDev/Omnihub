@@ -37,3 +37,18 @@ Este archivo registra las mejoras y modificaciones realizadas en el proyecto par
 ### Cambios Realizados:
 - **Icono Domótica:** Se cambió a `fa-house-lock`. Representa de forma mucho más clara la unión entre el hogar (casa) y la seguridad/control (candado).
 - **Mejora Visual:** Se cambió el icono de Equipo Médico a `fa-heart-pulse` para una asociación más directa con la salud y operatividad.
+
+## [2026-04-09] - Fase 4: Diferenciadores de Marca
+**Objetivo:** Reforzar la propuesta de valor y generar confianza mediante los pilares de servicio de OmniHub.
+
+### Cambios Realizados:
+- **Sección "¿Por qué elegirnos?":** Se implementó una nueva sección con 4 pilares: Atención Personalizada, Seguridad, Tecnología y Soporte.
+- **Diseño Visual:** Se utilizó un fondo con un tinte azul muy suave para separar visualmente la sección de "Nosotros" y "Servicios".
+- **Iconografía:** Se seleccionaron iconos representativos de soporte técnico, seguridad y compromiso.
+
+## [2026-04-09] - Mejora de Conversión: Mensajes de WhatsApp
+**Objetivo:** Reducir la fricción en el contacto inicial mediante mensajes pre-configurados.
+
+### Cambios Realizados:
+- **WhatsApp con Mensaje:** Se añadieron parámetros de texto (`?text=`) a todos los enlaces de WhatsApp.
+- **Mensaje Personalizado:** El cliente ahora inicia el chat con un saludo y una solicitud de información/cotización automática.
