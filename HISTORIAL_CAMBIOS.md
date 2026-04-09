@@ -52,3 +52,19 @@ Este archivo registra las mejoras y modificaciones realizadas en el proyecto par
 ### Cambios Realizados:
 - **WhatsApp con Mensaje:** Se añadieron parámetros de texto (`?text=`) a todos los enlaces de WhatsApp.
 - **Mensaje Personalizado:** El cliente ahora inicia el chat con un saludo y una solicitud de información/cotización automática.
+
+## [2026-04-09] - Fase 5: Interactividad en Portafolio
+**Objetivo:** Permitir que los clientes vean múltiples ejemplos de trabajos realizados en una sola tarjeta.
+
+### Cambios Realizados:
+- **Carruseles Dinámicos:** Se reemplazó la imagen única de cada proyecto por un sistema de carrusel interactivo.
+- **Navegación:** Se añadieron botones (flechas) laterales que aparecen al pasar el cursor sobre la imagen.
+- **Capacidad:** Cada proyecto ahora admite múltiples imágenes (configurado con 4 imágenes genéricas por ahora).
+- **Lógica Independiente:** El sistema permite que cada carrusel se mueva sin afectar a los demás.
+
+## [2026-04-09] - Simplificación Visual
+**Objetivo:** Mejorar la visibilidad de los carruseles eliminando elementos distractores.
+
+### Cambios Realizados:
+- **Eliminación de Overlays:** Se quitaron las capas azules y el texto que aparecían sobre las imágenes al pasar el ratón.
+- **Enfoque en Contenido:** Ahora las imágenes del carrusel son plenamente visibles en todo momento, permitiendo una navegación más intuitiva.

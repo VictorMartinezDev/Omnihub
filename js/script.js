@@ -57,6 +57,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Lógica de Carruseles en Portafolio ---
+    const carousels = document.querySelectorAll('.portfolio-carousel');
+    
+    carousels.forEach(carousel => {
+        const container = carousel.querySelector('.carousel-container');
+        const nextBtn = carousel.querySelector('.next');
+        const prevBtn = carousel.querySelector('.prev');
+        const images = carousel.querySelectorAll('.carousel-container img');
+        let index = 0;
+
+        const updateCarousel = () => {
+            container.style.transform = `translateX(-${index * 100}%)`;
+        };
+
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Evitar conflictos con el overlay
+            index = (index + 1) % images.length;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            index = (index - 1 + images.length) % images.length;
+            updateCarousel();
+        });
+    });
+
     // --- Animación de entrada para las tarjetas de servicio ---
     const serviceCards = document.querySelectorAll('.service-card');
     const observerOptions = {

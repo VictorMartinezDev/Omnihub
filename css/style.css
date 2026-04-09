@@ -373,48 +373,48 @@ nav ul li a:hover {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.portfolio-img {
+.portfolio-carousel {
     position: relative;
     height: 250px;
     overflow: hidden;
 }
 
-.portfolio-img img {
-    width: 100%;
+.carousel-container {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-container img {
+    min-width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition);
 }
 
-.portfolio-item:hover .portfolio-img img {
-    transform: scale(1.1);
-}
-
-.portfolio-overlay {
+.carousel-btn {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(15, 44, 89, 0.8); /* Azul Marino con transparencia */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(15, 44, 89, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
     opacity: 0;
     transition: var(--transition);
 }
 
-.portfolio-overlay span {
-    color: var(--white);
-    font-weight: 600;
-    font-size: 1.2rem;
-    border: 2px solid var(--white);
-    padding: 10px 20px;
-}
-
-.portfolio-item:hover .portfolio-overlay {
+.portfolio-carousel:hover .carousel-btn {
     opacity: 1;
 }
+
+.carousel-btn:hover {
+    background: rgba(15, 44, 89, 0.8);
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
 
 .portfolio-info {
     padding: 20px;
