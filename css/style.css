@@ -416,6 +416,13 @@ nav ul li a:hover {
 .carousel-btn.prev { left: 10px; }
 .carousel-btn.next { right: 10px; }
 
+/* Ocultar flechas en móviles ya que se usa swipe */
+@media (max-width: 768px) {
+    .carousel-btn {
+        display: none !important;
+    }
+}
+
 .portfolio-info {
     padding: 20px;
 }

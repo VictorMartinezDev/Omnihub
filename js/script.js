@@ -66,22 +66,79 @@ document.addEventListener('DOMContentLoaded', () => {
         const prevBtn = carousel.querySelector('.prev');
         const images = carousel.querySelectorAll('.carousel-container img');
         let index = 0;
+        let autoPlayInterval;
 
         const updateCarousel = () => {
             container.style.transform = `translateX(-${index * 100}%)`;
         };
 
-        nextBtn.addEventListener('click', (e) => {
-            e.stopPropagation(); // Evitar conflictos con el overlay
+        const nextImage = () => {
             index = (index + 1) % images.length;
             updateCarousel();
+        };
+
+        const prevImage = () => {
+            index = (index - 1 + images.length) % images.length;
+            updateCarousel();
+        };
+
+        // Eventos de botones
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            nextImage();
+            resetAutoPlay();
         });
 
         prevBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            index = (index - 1 + images.length) % images.length;
-            updateCarousel();
+            prevImage();
+            resetAutoPlay();
         });
+
+        // --- Auto-play (5 segundos) ---
+        const startAutoPlay = () => {
+            autoPlayInterval = setInterval(nextImage, 5000);
+        };
+
+        const stopAutoPlay = () => {
+            clearInterval(autoPlayInterval);
+        };
+
+        const resetAutoPlay = () => {
+            stopAutoPlay();
+            startAutoPlay();
+        };
+
+        // Pausar al pasar el mouse (desktop)
+        carousel.addEventListener('mouseenter', stopAutoPlay);
+        carousel.addEventListener('mouseleave', startAutoPlay);
+
+        // --- Soporte Táctil (Swipe) ---
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+            stopAutoPlay();
+        }, {passive: true});
+
+        carousel.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+            startAutoPlay();
+        }, {passive: true});
+
+        const handleSwipe = () => {
+            const swipeThreshold = 50; // Mínimo de píxeles para considerar swipe
+            if (touchStartX - touchEndX > swipeThreshold) {
+                nextImage(); // Deslizar a la izquierda -> siguiente
+            } else if (touchEndX - touchStartX > swipeThreshold) {
+                prevImage(); // Deslizar a la derecha -> anterior
+            }
+        };
+
+        // Iniciar auto-play al cargar
+        startAutoPlay();
     });
 
     // --- Animación de entrada para las tarjetas de servicio ---

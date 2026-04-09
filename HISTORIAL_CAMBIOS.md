@@ -68,3 +68,18 @@ Este archivo registra las mejoras y modificaciones realizadas en el proyecto par
 ### Cambios Realizados:
 - **Eliminación de Overlays:** Se quitaron las capas azules y el texto que aparecían sobre las imágenes al pasar el ratón.
 - **Enfoque en Contenido:** Ahora las imágenes del carrusel son plenamente visibles en todo momento, permitiendo una navegación más intuitiva.
+
+## [2026-04-09] - Optimización de Experiencia de Usuario (UX)
+**Objetivo:** Hacer los carruseles más dinámicos y accesibles en dispositivos móviles.
+
+### Cambios Realizados:
+- **Auto-play Dinámico:** Las imágenes de los proyectos ahora cambian automáticamente cada 5 segundos.
+- **Pausa Inteligente:** El auto-play se detiene cuando el usuario interactúa con el carrusel o posiciona el cursor sobre él.
+- **Soporte Táctil (Swipe):** Se implementó la detección de gestos en móviles, permitiendo cambiar de imagen deslizando el dedo lateralmente.
+
+## [2026-04-09] - Refinamiento de Interfaz Móvil
+**Objetivo:** Limpiar la visualización en dispositivos táctiles eliminando elementos redundantes.
+
+### Cambios Realizados:
+- **Ocultamiento de Flechas:** Se configuró el CSS para ocultar las flechas de los carruseles en pantallas menores a 768px.
+- **Navegación Táctil:** Se priorizó el uso de gestos (swipe) en móviles para una experiencia más natural y menos saturada visualmente.
