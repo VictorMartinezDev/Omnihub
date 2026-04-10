@@ -1,42 +1,48 @@
 # OmniHub - Página Web Corporativa
 
-Este proyecto es la página web oficial de **OmniHub**, una empresa especializada en servicios tecnológicos y de mantenimiento. La página está diseñada como una experiencia *One-Page* moderna, responsiva y profesional.
+Este proyecto es la página web oficial de **OmniHub**, una empresa especializada en servicios tecnológicos y de mantenimiento. La página está diseñada como una experiencia *One-Page* moderna, responsiva y profesional, enfocada en la conversión y la confianza del cliente.
 
 ## 🚀 Tecnologías Utilizadas
-- **HTML5:** Estructura semántica.
-- **CSS3:** Diseño personalizado, Flexbox, Grid y variables para la paleta de colores.
-- **JavaScript Puro (Vanilla JS):** Interactividad, scroll suave y validación de formularios.
+- **HTML5:** Estructura semántica y accesible.
+- **CSS3:** Diseño personalizado con Flexbox, CSS Grid y animaciones de pulso y transición.
+- **JavaScript Puro (Vanilla JS):** Lógica de carruseles, detección de gestos táctiles (swipe), auto-play, scroll suave y validación de formularios.
+- **FontAwesome 6:** Iconografía especializada para seguridad, domótica y medicina.
+
+## 🌟 Características Principales
+- **Botón Flotante de WhatsApp:** Con animación de pulso y mensajes pre-configurados para facilitar la cotización inmediata.
+- **Carruseles de Proyectos:** Sistema interactivo que permite ver múltiples imágenes por trabajo realizado, con soporte para auto-play cada 5 segundos.
+- **Optimización Móvil:** Interfaz limpia que prioriza gestos táctiles y oculta elementos redundantes en pantallas pequeñas.
+- **Estructura de Servicios Detallada:** Desglose visual de sub-especialidades en CCTV, Electricidad, Domótica/Acceso y Soporte Médico.
 
 ## 🎨 Identidad Visual
-La paleta de colores se ha extraído directamente del logotipo de la empresa:
-- **Azul Marino (#0F2C59):** Utilizado para textos principales, encabezados y elementos de marca.
-- **Naranja (#E87A31):** Color de acento para el servicio de CCTV.
-- **Azul Verdoso (#3A7CA5):** Color de acento para el servicio de Domótica.
-- **Verde Claro (#82C293):** Color de acento para Instalaciones Eléctricas.
-- **Verde Salvia (#6CA698):** Color de acento para Mantenimiento a Equipo Médico.
-- **Fondo (#F8F9FA):** Un tono gris muy claro para mantener la legibilidad y limpieza.
+La paleta de colores se basa en el logotipo oficial de OmniHub para garantizar coherencia de marca:
+- **Azul Marino (#0F2C59):** Color institucional principal.
+- **Naranja (#E87A31):** Acento para CCTV.
+- **Azul Verdoso (#3A7CA5):** Acento para Domótica y Acceso.
+- **Verde Claro (#82C293):** Acento para Electricidad.
+- **Verde Salvia (#6CA698):** Acento para Soporte Médico.
 
 ## 📂 Estructura del Proyecto
 ```text
 OmniHub/
-├── index.html          # Punto de entrada principal
-├── README.md           # Este archivo (Documentación y Contexto)
+├── index.html            # Punto de entrada principal
+├── README.md             # Documentación general
+├── HISTORIAL_CAMBIOS.md  # Registro detallado de evoluciones del proyecto
 ├── css/
-│   └── style.css       # Hoja de estilos principal
+│   └── style.css         # Estilos, variables y media queries
 ├── js/
-│   └── script.js       # Lógica y animaciones del lado del cliente
+│   └── script.js         # Lógica de carruseles, menú y eventos
 └── assets/
-    ├── images/         # Recursos visuales (Logotipo, etc.)
-    └── icons/          # Iconos SVG personalizados
+    └── images/           # Logotipos y recursos visuales
 ```
 
 ## 🛠️ Secciones de la Página
-1. **Inicio:** Presentación de la empresa con el logo y llamado a la acción.
-2. **Acerca de Nosotros:** Misión y visión de OmniHub.
-3. **Servicios:** Detalle de CCTV, Electricidad, Domótica y Equipo Médico.
-4. **Contacto:** Formulario con campos de Nombre, Correo, Teléfono y Servicio de Interés.
-5. **Redes Sociales:** Enlaces en el pie de página.
+1. **Inicio (Hero):** Propuesta de valor clara y acceso rápido a servicios.
+2. **Acerca de Nosotros:** Historia y compromiso de OmniHub.
+3. **¿Por qué elegirnos?:** Diferenciadores clave (Atención personalizada, Tecnología, Soporte).
+4. **Servicios:** Catálogo detallado con iconos y listas de especialidades.
+5. **Nuestros Trabajos:** Portafolio visual con carruseles interactivos de casos de éxito.
+6. **Contacto:** Formulario completo y acceso directo a WhatsApp y correo.
 
-## 📝 Notas para Futuras Sesiones
-- La página es totalmente estática. Para el envío real del formulario de contacto, se requeriría un backend o un servicio como Formspree/Netlify Forms.
-- Los colores de acento se manejan a través de variables CSS en `style.css` para facilitar cambios futuros en la marca.
+## 📝 Registro de Evolución
+Para un seguimiento técnico detallado de cada mejora realizada en las sesiones de desarrollo, consulte el archivo [HISTORIAL_CAMBIOS.md](./HISTORIAL_CAMBIOS.md).
