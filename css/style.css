@@ -202,6 +202,7 @@ nav ul li a:hover {
 
 .about-text p {
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .about-features {

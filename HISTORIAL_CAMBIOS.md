@@ -21,6 +21,8 @@ Este archivo registra las mejoras y modificaciones realizadas en el proyecto par
   - Adición de la opción "IA y Software" en el selector de servicios de interés.
 - **Correcciones de Código (Refactorización):**
   - Limpieza de un error sintáctico de etiquetas duplicadas (`</script> </body> </html>`) al cierre de `index.html`.
+- **Alineación y Estética Visual:**
+  - Justificación de los párrafos en la sección "Acerca de Nosotros" para dar una perspectiva visual simétrica, ordenada y profesional.
 
 ---
 
