@@ -4,6 +4,26 @@ Este archivo registra las mejoras y modificaciones realizadas en el proyecto par
 
 ---
 
+## [2026-05-28] - Fase 6: Expansión de Negocios (IA & Software) y Renovación de Identidad Visual
+**Objetivo:** Integrar la nueva división estratégica de Inteligencia Artificial y Software, así como actualizar y homogeneizar la identidad visual del negocio con el nuevo logotipo.
+
+### Cambios Realizados:
+- **Identidad Visual Premium:**
+  - Reemplazo del logo principal en el Hero por la versión premium recortada y transparente `OmniHub_sin_fondo_cropped.png`.
+  - Mantenimiento de la cabecera (Header) y del pie de página (Footer) con el logotipo en formato de texto plano comercial ("OmniHub"), logrando una apariencia más limpia y minimalista.
+- **Rediseño de Propuesta de Valor (Copywriting):**
+  - Actualización del Hero, Nosotros y los Pilares para posicionar a OmniHub como un Hub tecnológico líder en IA, Software y soluciones tradicionales.
+- **Nueva Tarjeta de Servicio:**
+  - Diseño de la tarjeta interactiva de "IA y Software" en la cuadrícula de servicios, implementando un color de acento púrpura digital (`#7F56D9`) y una caja de icono animada.
+- **Portafolio de Software & IA:**
+  - Integración de un nuevo caso de éxito de IA & Software con un carrusel dinámico auto-reproducible (soporte swipe táctil y pausa en hover) con 4 imágenes de alta calidad.
+- **Formulario Inteligente:**
+  - Adición de la opción "IA y Software" en el selector de servicios de interés.
+- **Correcciones de Código (Refactorización):**
+  - Limpieza de un error sintáctico de etiquetas duplicadas (`</script> </body> </html>`) al cierre de `index.html`.
+
+---
+
 ## [2026-04-09] - Fase 1: Optimización de Contacto y Conversión
 **Objetivo:** Facilitar la comunicación directa con clientes potenciales y resaltar los servicios iniciales.
 

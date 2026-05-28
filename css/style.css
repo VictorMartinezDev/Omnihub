@@ -10,6 +10,7 @@
     --domotics-color: #3A7CA5; /* Azul Verdoso */
     --electricity-color: #82C293; /* Verde Claro */
     --medical-color: #6CA698;  /* Verde Salvia */
+    --software-color: #7F56D9; /* Púrpura/Índigo Digital */
     
     --transition: all 0.3s ease;
 }
@@ -341,6 +342,9 @@ nav ul li a:hover {
 
 .card-medical { border-color: var(--medical-color); }
 .card-medical .icon-box { color: var(--medical-color); background: #f1f8f6; }
+
+.card-software { border-color: var(--software-color); }
+.card-software .icon-box { color: var(--software-color); background: #f5f0ff; }
 
 /* Portfolio Section */
 .portfolio {
